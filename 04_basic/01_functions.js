@@ -48,7 +48,7 @@ const result = addTwoNumber(5,6)
 
 function loginUserMessage(username){
     if(!username){
-        console.log("Pleace enter username");
+       // console.log("Pleace enter username");
         return
     }
   return `${username} just logged in `
@@ -56,5 +56,32 @@ function loginUserMessage(username){
 
 //console.log(loginUserMessage("Ghidode"));
 //console.log(loginUserMessage(Yogendra));
-console.log(loginUserMessage());
+//console.log(loginUserMessage());
+
+function calculateCartPrice(...num1){    //  ...->rest operater
+    return num1
+
+}
+//console.log(calculateCartPrice(200,400,230));
+const user = {
+    username: "ghidode",
+    price: 199
+
+}
+function handleObject(anyobject){
+  console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+//handleObject(user)
+
+handleObject({
+    username: "yogendra",
+    price:299
+})
+
+const myNewArray = [5500,765,44,533,3,56665]
+
+function returnSecondValue(getArray){
+    return getArray[2]
+}
+console.log(returnSecondValue(myNewArray));
 
