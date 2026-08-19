@@ -55,6 +55,27 @@ if(userLoggedIn && debitcard){          //dono condition true
  
 }
 
-if(loggedInFromGoogle || loggedInFromEmail){
+if(loggedInFromGoogle || loggedInFromEmail){    //one condition true
    console.log("User logged in");
 }
+
+
+
+//Nullish coalescring opreter(??): null undefind
+
+let val1;
+//val1 = 5 ?? 10
+//val1 = null ?? 10
+//val1 = undefined ?? 15
+val1 = null ?? 10 ?? 20
+
+console.log(val1);
+
+
+//terniary operator
+
+//condition ? true : false
+
+
+const IceteaPrice = 100
+IceteaPrice >=  80 ? console.log ("Less then 80") : console.log("more then 80")
